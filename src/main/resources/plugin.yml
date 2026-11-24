@@ -1,0 +1,29 @@
+name: tr237_Playtime_System
+version: 1.0
+main: tr237.tr237_Playtime_System.Tr237_Playtime_System
+api-version: "1.21"
+author: tr237
+description: Accurate and persistent playtime tracking system for MaghrebSMP.
+
+commands:
+  playtime:
+    description: Manage and view player playtime
+    aliases: [pt]
+    usage: /playtime [player|top|set|add|remove|reload]
+
+permissions:
+  playtime.use:
+    description: View personal playtime
+    default: true
+  playtime.others:
+    description: View other players' playtime
+    default: op
+  playtime.top:
+    description: View the top 10 playtime leaderboard
+    default: true
+  playtime.admin:
+    description: Modify player playtime (set, add, remove)
+    default: op
+  playtime.reload:
+    description: Reload plugin configuration
+    default: op

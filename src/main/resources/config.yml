@@ -1,0 +1,27 @@
+settings:
+  # Interval in seconds for automatic background saving to SQLite
+  auto-save-interval-seconds: 300
+  # Number of players shown in /playtime top
+  leaderboard-limit: 10
+
+messages:
+  prefix: "&8[&bPlaytime&8] &r"
+  no-permission: "&cYou do not have permission to execute this command."
+  only-players: "&cOnly players can check their own playtime."
+  player-not-found: "&cPlayer &e%player% &cwas not found in records."
+  invalid-duration: "&cInvalid duration format! Examples: &e1d2h30m&c, &e45m&c, &e2h15s"
+  usage: "&cUsage: &e/playtime [player | top | set <player> <duration> | add <player> <duration> | remove <player> <duration> | reload]"
+
+  self-playtime: "&7Your total playtime: &b%time%"
+  other-playtime: "&e%player%&7's total playtime: &b%time%"
+
+  top-header: "&8&m------&r &bTop %limit% Playtime Leaderboard &8&m------"
+  top-entry: "&b#%rank% &e%player% &8- &f%time%"
+  top-empty: "&7No playtime records available yet."
+  top-footer: "&8&m----------------------------------------"
+
+  admin-set: "&aSet &e%player%&a's playtime to &b%time%&a."
+  admin-add: "&aAdded &b%amount% &ato &e%player%&a's playtime. New total: &b%time%&a."
+  admin-remove: "&aRemoved &b%amount% &afrom &e%player%&a's playtime. New total: &b%time%&a."
+
+  reloaded: "&aConfiguration and messages reloaded successfully."
